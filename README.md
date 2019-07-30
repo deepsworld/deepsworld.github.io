@@ -1,3 +1,3 @@
 # deepsworld.github.io
 
-Simple Portfolio website
+Portfolio website of Deep Patel
