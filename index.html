@@ -34,6 +34,19 @@
 			border: 3px solid #f1f1f1;
 			z-index: 9;
 		}
+        /* The view my resume button */
+		.resume-button {
+			background-color: #555;
+			color: white;
+			padding: 16px 20px;
+			border: none;
+			cursor: pointer;
+			opacity: 0.6;
+			position: fixed;
+			bottom: 23px;
+			left: 28px;
+			width: 280px;
+		}
 
 		/* Add styles to the form container */
 		.form-container {
@@ -81,6 +94,7 @@
 		.open-button:hover {
 			opacity: 1;
 		}
+
 	</style>
 
 	<title>Deep Patel - Portfolio</title>
@@ -585,7 +599,18 @@
 			<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 		</form>
 	</div>
+
+	<footer class="footer text-left pt-2 pb-5">
+
+	</footer>
+	<button class="resume-button" onclick="openInNewTab('https://deepsworld.github.io/Resume')">View my resume</button>
+
+	<!--Javascript goes here-- You should make a separate javascript file lazy asshole-->
 	<script>
+		function openInNewTab(url) {
+			var win = window.open(url, '_blank');
+			win.focus();
+		}
 		function openForm() {
 			document.getElementById("myForm").style.display = "block";
 		}
@@ -594,8 +619,7 @@
 			document.getElementById("myForm").style.display = "none";
 		}
 	</script>
-
-
+	
 </body>
 
 </html>
