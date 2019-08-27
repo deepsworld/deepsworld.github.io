@@ -55,16 +55,7 @@
 			background-color: white;
 		}
 
-		/* Full-width textarea */
-		.form-container textarea {
-			width: 100%;
-			padding: 15px;
-			margin: 5px 0 22px 0;
-			border: none;
-			background: #f1f1f1;
-			resize: none;
-			min-height: 200px;
-		}
+		
 
 		/* When the textarea gets focus, do something */
 		.form-container textarea:focus {
@@ -588,7 +579,7 @@
 	</footer>
 	<button class="open-button" onclick="openForm()">Chat with my AI assistant</button>
 
-	<div class="chat-popup" id="myForm">
+	<div class="chat-popup" id="myForm1">
 		<form action="/action_page.php" class="form-container">
 			<h1>Chat</h1>
 
@@ -598,6 +589,13 @@
 			<button type="submit" class="btn">Send</button>
 			<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 		</form>
+	</div>
+	<div class="chat-popup" id="myForm">
+		<div id="close" onclick="closeForm()"></div>
+		<button class="close"  onclick="closeForm()">&times; </button>
+		<iframe height="430" width="350" src="https://console.dialogflow.com/api-client/demo/embedded/7d623fb3-0ee6-4ede-a171-5572c715060e">
+			<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		</iframe>
 	</div>
 
 	<footer class="footer text-left pt-2 pb-5">
@@ -619,6 +617,8 @@
 			document.getElementById("myForm").style.display = "none";
 		}
 	</script>
+	
+	
 	
 </body>
 
