@@ -129,3 +129,15 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Light mode */
+body {
+  background: #fff;
+  color: #000;
+}
+
+/* Dark mode */
+body.dark {
+  background: #000;
+  color: #fff;
+}
